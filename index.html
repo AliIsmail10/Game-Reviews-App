@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="mainPage">
+      <nav
+      id="navbar"
+      class="navbar navbar-expand-lg offset-navbar shadow shadow-lg rounded-4 text-uppercase p-1"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="imgs/logo-sm.png" class="w-25" alt="" />
+          game reviews
+        </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link category" href="#" id="mmorpg">mmorpg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link category" href="#" id="shooter">shooter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link category" href="#" id="sailing">sailing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link category" href="#"  id="permadeath"
+                >permadeath</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link category" href="#" id="superhero">superhero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link category" href="#" id="pixel">pixel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="home"></section>
+
+      <section>
+        <div class="container pt-5">
+          <div class="row mt-5 gy-4" id="gameCard">
+            <div id="spinner" class="spinner-overlay d-none">
+              <span class="loader"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+      <section id="details" class="d-none">
+        <div class="container">
+          <div class="row position-relative" id="showDettailsData">
+
+             <div id="spinner" class="spinner-overlay d-none">
+              <span class="loader"></span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

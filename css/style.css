@@ -1,0 +1,152 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #272b30;
+  --color-text: #fff;
+  --nav-barColor: #3a497b;
+}
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+nav {
+  width: 80% !important;
+  transform: translateX(12%);
+  background-color: var(--nav-barColor);
+}
+a {
+  color: var(--color-text) !important;
+}
+i{
+  cursor: pointer;
+}
+.nav-link {
+  font-size: 0.9rem;
+}
+.offset-navbar {
+  top: 200px;
+  position: absolute;
+  width: 100%;
+  z-index: 1030;
+}
+.fixed-top-custom {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1030;
+}
+
+.active {
+  color: #0395C8 !important;
+}
+.home {
+  background-image: url(../imgs/wraper.png);
+  background-position: center center;
+  background-size: cover;
+  height: 38vh;
+}
+
+.card {
+  background-color: var(--main-color);
+  border: 1px solid #191c1f;
+  transition: all 0.4s ease;
+}
+
+.card img {
+  padding: 10px;
+  filter: grayscale(60%);
+  object-fit: cover;
+}
+.card:hover img {
+  filter: grayscale(0%);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card .card-title {
+  color: var(--color-text);
+  font-size: 0.8rem;
+  padding-right: 1rem;
+}
+.card .card-body {
+  height: 175px;
+}
+.card .card-text {
+  color: #939598;
+}
+.card .card-footer a {
+  padding: 5px;
+  font-size: 0.8rem !important;
+  background-color: #32383e;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+}
+#showDettailsData span{
+  font-size: .8rem;
+  font-weight: bold;
+}
+.loader {
+  width: 96px; 
+  height: 96px; 
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 8px solid #fff; 
+  border-right: 8px solid transparent; 
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: relative; 
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 96px; 
+  height: 96px; 
+  border-radius: 50%;
+  border-left: 8px solid #ff3d00; 
+  border-bottom: 8px solid transparent; 
+  animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-overlay {
+  position: fixed;
+  top: -30px;
+  left: 0;
+  /* bottom: -60px; */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0,0 , 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+/* 
+#details{
+  display: block;
+  width: 100%;
+  height: 100vh;
+  
+  z-index: 454355;
+} */
